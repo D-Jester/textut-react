@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/textut-react/static/css/main.e6c13ad2.css",
+    "main.js": "/textut-react/static/js/main.baba7349.js",
+    "static/js/787.09a06e0b.chunk.js": "/textut-react/static/js/787.09a06e0b.chunk.js",
+    "index.html": "/textut-react/index.html",
+    "main.e6c13ad2.css.map": "/textut-react/static/css/main.e6c13ad2.css.map",
+    "main.baba7349.js.map": "/textut-react/static/js/main.baba7349.js.map",
+    "787.09a06e0b.chunk.js.map": "/textut-react/static/js/787.09a06e0b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.baba7349.js"
+  ]
+}
