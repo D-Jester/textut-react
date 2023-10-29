@@ -6,39 +6,39 @@ export default function Navbar(props) {
   return (
     <div>
       <nav
-        class={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
       >
-        <div class="container-fluid">
-          <Link class="navbar-brand" to="">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="">
             <b>{props.title}</b>
-          </Link>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/">
+          </Link>          
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
                   {props.first}
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/about">
+              <li className="nav-item">
+                <Link className="nav-link" to="/about">
                   {props.second}
                 </Link>
               </li>
             </ul>
           </div>
           <div
-            class={`form-check form-switch text-${
+            className={`form-check form-switch text-${
               props.mode === "dark" ? "light" : "dark"
             }`}
           >
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               onClick={props.toggleMode}
               id="flexSwitchCheckDefault"
             />
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
               {props.mode === "dark" ? "Light Mode" : "Dark Mode"}
             </label>
           </div>

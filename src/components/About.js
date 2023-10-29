@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 export default function About(props) {    
   return (
     <>
-      <div class={`container text-${props.mode === "dark" ? "light" : "dark"}`}>
+      <div className={`container text-${props.mode === "dark" ? "light" : "dark"}`}>
         <h1>{props.heading}</h1>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseOne"
@@ -18,27 +18,26 @@ export default function About(props) {
                 style={{color:(props.mode==="dark")?"white":"black",
                 backgroundColor:(props.mode==="dark")?"#454749":"white"}}
               >
-                Accordion Item #1
+                What is TextUT?
               </button>
             </h2>
             <div
               id="flush-collapseOne"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
               style={{color:(props.mode==="dark")?"white":"black",
                 backgroundColor:(props.mode==="dark")?"#454749":"white"}}
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div className="accordion-body">
+                Its a basic <strong>text utilities app</strong>, with different options to 
+                change text according to user's choice.
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#flush-collapseTwo"
@@ -47,56 +46,22 @@ export default function About(props) {
                 style={{color:(props.mode==="dark")?"white":"black",
                 backgroundColor:(props.mode==="dark")?"#454749":"white"}}
               >
-                Accordion Item #2
+                Is there dark mode for this web app?
               </button>
             </h2>
             <div
               id="flush-collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionFlushExample"
               style={{color:(props.mode==="dark")?"white":"black",
                 backgroundColor:(props.mode==="dark")?"#454749":"white"}}
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+              <div className="accordion-body">
+                Dark mode can be switched on or off from the top right corner of the 
+                navigation bar.
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-                style={{color:(props.mode==="dark")?"white":"black",
-                backgroundColor:(props.mode==="dark")?"#454749":"white"}}
-              >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-              style={{color:(props.mode==="dark")?"white":"black",
-                backgroundColor:(props.mode==="dark")?"#454749":"white"}}
-            >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
-              </div>
-            </div>
-          </div>
+          </div>         
         </div>
       </div>
     </>
